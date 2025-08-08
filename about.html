@@ -31,26 +31,41 @@
     </header>
 
     <main>
-        <section class="about-section">
-            <h2 class="display-1">All About Me</h2>
-            <!-- insert weird line -->
-            <div>
-                <p class="about-first">
-                    <div class="image-container">
-                        <picture>
-                            <source srcset="images/big-ol-pic-of-me.png" media="(min-width: 768px)">
-                            <source srcset="images/smaller-pic-of-me.png" media="(max-width: 767px)">
-                            <img src="images/big-ol-pic-of-me.png" alt="photo of me" class="img-fluid">
-                        </picture>
-                    </div>
+        <section class="about-section py-5">
+            <div class="container">
+              <h2 class="display-1 text-center mb-4" style="font-weight: bold;;">All About Me</h2>
+              <hr class="mb-5" style="height: 0.3rem; background-color: black; opacity: 100%;" >
+              <div class="row align-items-start">
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <picture>
+                    <source srcset="images/big-ol-pic-of-me.png" media="(min-width: 768px)">
+                    <source srcset="images/smaller-pic-of-me.png" media="(max-width: 767px)">
+                    <img src="images/big-ol-pic-of-me.png" alt="photo of me" class="img-fluid rounded">
+                  </picture>
+                </div>
+                <div class="col-md-8">
+                  <p style="font-size: 1.4rem;">
                     Evan Snider is an 18-year-old student currently pursuing a diploma in Interactive Media Design at Algonquin College. Passionate about digital creativity and storytelling, Evan is diving into the world of design, coding, and multimedia production with enthusiasm and curiosity. Whether it's building websites, experimenting with animation, or exploring the latest design trends, Evan is always eager to learn and grow within the evolving landscape of media and technology.
-                </p>
-                <p>Outside of class, Evan enjoys the simpler things in life—like hiking through nature trails, snapping photos of everyday moments, and discovering new music. With a laid-back approach and a sense of adventure, Evan is driven by a desire to create meaningful, engaging content that connects with people. Looking ahead, they hope to combine their technical skills and artistic vision to carve out a unique path in the creative industry.</p>
-                <!-- insert weird line -->
-                <p>Snider Designs began as a personal project during Evan Snider’s first year at Algonquin College. While studying Interactive Media Design, Evan found themself constantly experimenting—tweaking layouts, designing logos, and building websites just for fun. What started as classwork quickly turned into a passion project, and that passion became a brand. Inspired by a mix of curiosity and ambition, Evan launched Snider Designs as a creative space to explore ideas, share work, and collaborate with others.</p>
-                <p>Rather than just a name, Snider Designs became a reflection of Evan’s personality—clean, thoughtful, and adaptable. From designing sleek interfaces to crafting visuals that tell a story, the brand stands for clarity, connection, and creativity. Every project, no matter how small, is treated as a chance to learn and grow. Now, Snider Designs is more than just a portfolio—it’s a foundation for future work, real-world experience, and a growing presence in the design community.</p>
-            </div>
-        </section>
+                  </p>
+                  <p style="font-size: 1.4rem;">
+                    Outside of class, Evan enjoys the simpler things in life—like hiking through nature trails, snapping photos of everyday moments, and discovering new music. With a laid-back approach and a sense of adventure, Evan is driven by a desire to create meaningful, engaging content that connects with people. Looking ahead, they hope to combine their technical skills and artistic vision to carve out a unique path in the creative industry.
+                  </p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        </div>
+                            <hr class="my-5" style="height: 0.3rem; background-color: black; opacity: 100%;">
+                            <p style="font-size: 1.4rem;">
+                                Snider Designs began as a personal project during Evan Snider’s first year at Algonquin College. While studying Interactive Media Design, Evan found themself constantly experimenting—tweaking layouts, designing logos, and building websites just for fun. What started as classwork quickly turned into a passion project, and that passion became a brand. Inspired by a mix of curiosity and ambition, Evan launched Snider Designs as a creative space to explore ideas, share work, and collaborate with others.
+                            </p>
+                            <p style="font-size: 1.4rem;">
+                                Rather than just a name, Snider Designs became a reflection of Evan’s personality—clean, thoughtful, and adaptable. From designing sleek interfaces to crafting visuals that tell a story, the brand stands for clarity, connection, and creativity. Every project, no matter how small, is treated as a chance to learn and grow. Now, Snider Designs is more than just a portfolio—it’s a foundation for future work, real-world experience, and a growing presence in the design community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+          </section>
 
         <section class="review-section">
             <h2 >What My Customers Say About Me</h2>
@@ -74,18 +89,53 @@
         </div>
         </section>
         
-        <section>
-            <h2>UPCOMING PROJECTS:</h2>
-            <div>
-                <!-- projects page -->
+        <section class="py-5">
+            <div class="container">
+              <div class="col-12 text-center">  
+                <h2 class="mb-4" style="font-size: 4rem;">Services</h2>
+              </div>
+              <div class="row g-3">
+                <div class="col-md-3">
+                  <div class="service-card text-center p-4 h-100">
+                    <img src="images/tree-project.png" alt="Graphic Design" class="mb-3 img-fluid">
+                    <h4 style="font-size: 3rem;">Tree Project</h4>
+                    <p>A nature-inspired initiative focused on preserving and showcasing the beauty of trees. Combines research, design, and visuals to highlight the importance of environmental sustainability.</p>
+                    <button class="btn btn-primary">See More</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="service-card text-center p-4 h-100">
+                    <img src="images/work-project.png" alt="UX Design" class="mb-3 img-fluid">
+                    <h4 style="font-size: 3rem;">Work Project</h4>
+                    <p>A professional workflow solution designed to improve efficiency and collaboration. Developed with modern tools to streamline processes and deliver consistent results.</p>
+                    <button class="btn btn-primary">See More</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="service-card text-center p-4 h-100">
+                    <img src="images/kitty-project.png" alt="Photography" class="mb-3 img-fluid">
+                    <h4 style="font-size: 3rem;">Kitty Project</h4>
+                    <p>A playful and heartwarming project dedicated to feline photography and storytelling. Blends cute imagery with engaging narratives to connect with animal lovers everywhere.</p>
+                    <button class="btn btn-primary">See More</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card text-center p-4 h-100">
+                      <img src="images/movie-project.png" alt="UX Design" class="mb-3 img-fluid">
+                      <h4 style="font-size: 3rem;">Movie Project</h4>
+                      <p>A creative exploration into film production and visual storytelling. Covers everything from concept development to editing, bringing cinematic ideas to life.</p>
+                      <button class="btn btn-primary">See More</button>
+                    </div>
+                  </div>
+              </div>
             </div>
-        </section>
+          </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 - Snider Designs, Inc. All rights reserved. 1385 Woodroffe Avenue, Ottawa, ON, K2G 1V8</p>
+        <p style="font-size: 1.2rem; padding-left:1rem; padding-right:1rem; padding-top:1rem;">&copy; 2025 - Snider Designs, Inc. All rights reserved. 1385 Woodroffe Avenue, Ottawa, ON, K2G 1V8</p>
         <nav class="nav-bar" id="nav" aria-label="Main navigation">
-            <ul class="nav-list">
+            <ul class="nav justify-content-center border-between">
                 <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>

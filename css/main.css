@@ -32,6 +32,13 @@ footer {
     color:#fff;
     text-align: center;
 }
+.border-between .nav-item:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+.border-between .nav-link {
+    padding: 0.5rem 1rem; 
+    color: white;
+}
 
 /* Mobile Home */
 
@@ -49,15 +56,19 @@ footer {
   
   .hero .overlay-text {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px 40px;
+    padding: 15vw 32vw;
     text-align: center;
     color: white;
     font-family: 'Roboto Mono', monospace;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .hero .overlay-text {
+    width: 80%;
+    padding: 30px 0;
   }
   
   .hero .overlay-text h1 {
@@ -70,14 +81,23 @@ footer {
   }
   
   .hero .overlay-text p {
-    font-size: 1rem;
+    font-size: 2rem;
     margin: 0;
   }
 .welcome-section {
     background: #000000;
     color:#fff;
 }
-
+.service-card {
+    background: #fff;              
+    border: 1px solid #ddd;        
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
 /* Mobile About */
 .about-section h2{
     text-align: center;
@@ -163,21 +183,54 @@ footer {
 
 .find-me-section {
     height: 100vh;
+    background-color: #000000;
+    background-image: url(../images/guy-on-phone-small.png);
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
-  }
-.find-me-section img{
-    position: absolute;
+    z-index: 0;
+    color: white;
 }
+.find-me-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+}
+.find-me-section {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
 .object-fit-cover {
     object-fit: cover;
   }
 .faq-section {
+    position: relative;
+    height: 100vh;
     background: #000000;
+    background-image: url(../images/ottawa-river-small.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 0;
+    color: white;
 }
-.faq-section img{
-    opacity: 50%;
+.faq-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7); 
     z-index: 1;
 }
+.faq-section h2,
+.faq-section h4,
+.faq-section p {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
 
 section:last-of-type {
     background-color: #8F519E;
@@ -190,12 +243,12 @@ section:last-of-type {
   }
   
   section:last-of-type h2 {
-    font-size: 28px;
+    font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 20px;
-    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
+    border-bottom: 0.3rem solid black;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
   }
   
   section:last-of-type form {
@@ -203,25 +256,26 @@ section:last-of-type {
     flex-direction: column;
     gap: 0; 
     width: 100%;
-    max-width: 350px;
+    max-width: 34rem;
   }
   
   section:last-of-type label {
     font-weight: bold;
-    padding: 10px;
-    border: 2px solid black;
+    font-size: 2rem;
+    padding: 2rem;
+    border: 0.3rem solid black;
     border-bottom: none;
     background-color: #8F519E;
   }
   
   section:last-of-type input,
   section:last-of-type textarea {
-    border: 2px solid black;
+    border: 0.3rem solid black;
     background-color: #8F519E;
     color: black;
-    padding: 10px;
+    padding: 1rem;
     font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
+    font-size: 1rem;
     resize: none;
     border-top: none;
     border-radius: 0;
@@ -231,14 +285,14 @@ section:last-of-type {
     background-color: black;
     color: white;
     font-weight: normal; 
-    padding: 12px;
+    padding: 1rem;
     border: none;
     cursor: pointer;
     font-family: 'Roboto Mono', monospace;
-    margin-top: 20px;
+    margin-top: 2rem;
     width: 100%;
-    max-width: 200px;
+    max-width: 26rem;
     align-self: center;
-    font-size: 14px;
+    font-size: 1.5rem;
     border-radius: 0;
   }
