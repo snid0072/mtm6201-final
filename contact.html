@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <a href="#faq" class="skip-link">Skip to faq</a>
+    <a href="#contact" class="skip-link">Skip to contact form</a>
+    <a href="#footer" class="skip-link">Skip to footer</a>
     <header id="top">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Main navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt="snider-designs-logo" height="50"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav" aria-label="Main navigation">
+                <div class="collapse navbar-collapse" id="navbarNav" >
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
@@ -43,7 +46,7 @@
             </div>
         </section>
 
-        <section class="faq-section">
+        <section class="faq-section" id="faq">
             <div class="faq-content">
             <h2 class="fw-bold mb-4" style="font-family: monospace; font-size: 5rem; padding-bottom: 7rem; padding-top: 3rem;">Frequently <br> Asked Questions</h2>
                 <div>
@@ -63,7 +66,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="contact">
             <h2>Contact Us</h2>
             <form action="mailto:snid0072@algonquinlive.com" method="post" enctype="text/plain">
                 <label for="name" class="form-label">Name:</label>
@@ -75,12 +78,12 @@
                 <label for="message" class="form-label">Message:</label>
                 <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit" class="btn btn-dark">Send Message</button>
+                <button type="submit" class="btn hvr-shutter-out-horizontal">Send Message</button>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <p style="font-size: 1.2rem; padding-left:1rem; padding-right:1rem; padding-top:1rem;">&copy; 2025 - Snider Designs, Inc. All rights reserved. 1385 Woodroffe Avenue, Ottawa, ON, K2G 1V8</p>
         <nav class="nav-bar" id="nav" aria-label="Main navigation">
             <ul class="nav justify-content-center border-between">
