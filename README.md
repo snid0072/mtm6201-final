@@ -19,3 +19,5 @@ https://www.figma.com/design/t0LkCuDQC3Fh3Cw9xgIBmv/snider_evan_hi-fi_wireframes
 3. https://www.vecteezy.com/photo/22137755-close-up-of-a-man-using-mobile-smart-phone-in-the-city
 
 Thats all I used
+
+imaeg 1 and 2 are screenshots of weird glitches im having on github. those are not displaying on github but are on vs code
